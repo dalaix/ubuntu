@@ -1,0 +1,15 @@
+Source: nexus-personal
+Section: non-free/misc
+Priority: optional
+Maintainer: Francois WILLAME <francois.willame@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: https://install.bankid.com
+#Vcs-Git: git://git.debian.org/collab-maint/nexus-personal.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/nexus-personal.git;a=summary
+
+Package: nexus-personal
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}, libp11-2
+Description: Bankid blablalba
+ iblaaksdfjldfasfd asdf asdf 

@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+export DH_ALWAYS_EXCLUDE=CVS:.svn:.git
+export NO_PKG_MANGLE=1
+
+%:
+	dh $@ 
+
+NO_PKG_MANGLE=1
+
+override_dh_usrlocal:
+	echo "skip the usr/local complain"
+
+override_dh_shlibdeps:
+	echo "skip the calculate shared library dependencies"
+
+override_dh_builddeb:
+	dh_builddeb -a
+
+
