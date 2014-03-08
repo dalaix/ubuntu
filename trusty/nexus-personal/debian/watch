@@ -1,0 +1,10 @@
+version=3
+# https://install.bankid.com/Download?defaultFileId=Linux (.*)
+
+
+# watch file is not working yet.
+# try to debug using:
+# uscan --no-download --verbose --debug
+# you can get the original tar.gz file with the wget command below
+# wget --no-check-certificate --content-disposition https://install.bankid.com/Download?defaultFileId=Linux
+

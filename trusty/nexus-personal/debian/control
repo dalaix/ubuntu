@@ -1,0 +1,29 @@
+Source: nexus-personal
+Section: non-free/misc
+Priority: optional
+Maintainer: Francois WILLAME <francois.willame@gmail.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://www.nexussafe.com/
+Vcs-Git: git://github.com/dalaix/nexus-personal.git
+Vcs-Browser: https://github.com/dalaix/nexus-personal
+
+Package: nexus-personal
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}, libp11-2
+Description: Nexus personal for linux
+ Personal is a software product that allows you to sign electronic documents
+  (e.g. e-mail, bank details and important company documents), securely
+  authenticate yourself to Web sites (e.g. to access your bank account or intranet
+  solutions, with a smart card or a soft token), personal also allows you to manage
+  your digital identity tokens, in order to change PIN codes and import/export soft
+  tokens between different computers.
+  .
+  Nexus Personal är ett program som ger dig möjlighet att:
+  - Skriva under elektroniska dokument, t.ex. e-post, bankuppgifter och viktig företagsinformation.
+  - Legitimera dig mot webbservrar, för att komma åt dina bankkonton eller intranet med hjälp
+  av e-legitimationer lagrade på smarta kort eller som filer.
+  .
+  Personal ger dig också möjlighet att administrera dina e-legitimationer,
+  t.ex. ändra lösenord/PIN-koder och exportera/importera e-legitimationer mellan olika datorer.
+ 

@@ -1,0 +1,43 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+# Always exclude cvs subersion and git files.
+export DH_ALWAYS_EXCLUDE=CVS:.svn:.git
+# Need that to build on lauchpad.
+export NO_PKG_MANGLE=1
+
+%:
+	dh $@ 
+
+# fix perms as in nexus install file 
+export INSTALL_DIR=/usr/local/lib
+override_dh_fixperms:
+	dh_fixperms
+	chmod 755 $(CURDIR)/debian/nexus-personal${INSTALL_DIR}/personal/persadm
+	chmod 755 $(CURDIR)/debian/nexus-personal${INSTALL_DIR}/personal/persadm.sh
+	chmod 755 $(CURDIR)/debian/nexus-personal${INSTALL_DIR}/personal/personal.bin
+	chmod 755 $(CURDIR)/debian/nexus-personal${INSTALL_DIR}/personal/personal.sh
+
+override_dh_usrlocal:
+	echo "skip the usr/local complain"
+
+override_dh_shlibdeps:
+	echo "skip the calculate shared library dependencies"
+
+# Avoid compressing txt and htm files
+override_dh_compress:
+	dh_compress -X.txt  -X.htm
+
+get-orig-source:
+	wget --no-check-certificate --content-disposition --directory-prefix=.. --no-clobber https://install.bankid.com/Download?defaultFileId=Linux 
+
+get-source-version:
+	ls ../BISP-*.tar.gz  |  grep -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*'
+
+extract-orig-source:
+	tar -xvzf ../BISP-*.tar.gz
+
+create-orig-source:
+	cp ../BISP-*.tar.gz  ../nexus-personal_$(shell ls ../BISP-*.tar.gz  |  grep -o '[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*').orig.tar.gz
+

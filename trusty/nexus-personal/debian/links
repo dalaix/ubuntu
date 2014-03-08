@@ -1,0 +1,9 @@
+usr/local/lib/personal/libai.so usr/local/lib/libai.so
+usr/local/lib/personal/libtokenapi.so usr/local/lib/libtokenapi.so
+usr/local/lib/personal/personal.sh usr/local/bin/personal
+usr/local/lib/personal/persadm.sh usr/local/bin/persadm
+usr/local/lib/personal/libplugins.so usr/lib/firefox/plugins/libplugins.so
+# usr/local/lib/personal/libplugins.so usr/lib/firefox/browser/plugins/libplugins.so
+usr/local/lib/personal/libplugins.so usr/lib/firefox-addons/plugins/libplugins.so
+# usr/local/lib/personal/libplugins.so usr/lib/xulrunner-addons/plugins/libplugins.so
+usr/local/lib/personal/libplugins.so usr/lib/mozilla/plugins/libplugins.so

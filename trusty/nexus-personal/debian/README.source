@@ -1,0 +1,8 @@
+nexus-personal for Debian
+-------------------------
+
+The source was downloaded from https://install.bankid.com with the following  command :
+wget --no-check-certificate --content-disposition https://install.bankid.com/Download?defaultFileId=Linux
+
+You should get an archive like : BISP-*.tar.gz
+

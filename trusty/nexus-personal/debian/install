@@ -1,0 +1,23 @@
+BISP-*/Personal.cfg		usr/local/lib/personal/config
+BISP-*/nexus_logo_32x32.png	usr/local/lib/personal/icons
+BISP-*/personal.desktop		usr/share/applications
+BISP-*/libai.so 		usr/local/lib/personal
+BISP-*/libtokenapi.so		usr/local/lib/personal
+BISP-*/libBranding.so		usr/local/lib/personal
+#BISP-*/libP11.so		usr/local/lib/personal
+BISP-*/libCardSiemens.so	usr/local/lib/personal
+BISP-*/libCardSetec.so		usr/local/lib/personal
+BISP-*/libCardPrisma.so		usr/local/lib/personal
+BISP-*/libCardEdb.so		usr/local/lib/personal
+BISP-*/libCardGTOClsc.so	usr/local/lib/personal
+BISP-*/libCardOberthur.so	usr/local/lib/personal
+BISP-*/personal.bin		usr/local/lib/personal
+BISP-*/personal.sh		usr/local/lib/personal
+BISP-*/persadm			usr/local/lib/personal
+BISP-*/persadm.sh		usr/local/lib/personal
+BISP-*/libplugins.so		usr/local/lib/personal
+lang/da_DK/personal.mo		usr/local/lib/personal/lang/da_DK
+lang/fi_FI/personal.mo		usr/local/lib/personal/lang/fi_FI
+lang/nn_NO/personal.mo		usr/local/lib/personal/lang/nn_NO
+lang/sv_SE/personal.mo		usr/local/lib/personal/lang/sv_SE
+
